@@ -1,0 +1,60 @@
+.plan {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    &-block {
+        &-row {
+            .row-flex();
+            &-item {
+                &_1, &_2, &_3, &_4, &_5, &_6 {
+                    .shift-left(.4);
+                    .page__text_middle-black {
+                        text-transform: uppercase;
+                        padding-bottom: 14%;
+                    }
+                }
+
+                &_1 {
+                    padding-left: 6.5%;
+                }
+
+
+                
+            }
+            
+        }
+
+        &-img {
+            .page__img {
+                margin-bottom: 5%;
+            }
+        }
+
+        &-description {
+            &-row {
+                .row-flex();
+            }
+
+            .page__text_big {
+                position: relative;
+                .size(4);
+                .col();
+                span {
+                    position: absolute;
+                    top: 60px;
+                    left: 110px;
+                    &::after {
+                        content: '';
+                        display: inline-block;
+
+                    }
+                }
+            }
+
+            .page__text_mid {
+                .size(7);
+                .col();
+                padding-top: 3%;
+            }
+        }
+    }
+}

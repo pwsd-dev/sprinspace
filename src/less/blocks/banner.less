@@ -1,26 +1,71 @@
 .banner{
-    .page__title-h1{
-      
+    background-color: @color_black;
+    padding-top: 5%;
+    padding-bottom: 30%;
+    //height: 900px;
+    position: relative;
+    //height: 900px;
+    
+    &-block {
+        &-title {
+            .page__title-h1 {
+                text-transform: uppercase;
+                position: relative;
+                span {
+                    position: absolute;
+                    top: 150px;
+                    left: 530px;
+                    
+                }
+            }
+            
+            .page__text_middle {
+                text-transform: uppercase;
+                line-height: 28px;
+                position: relative;
+                padding-left: 7%;
+                top: 60px;
+                left: 180px;
+                //.size();
+                span {
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        display: inline-block;
+                        width: 140px;
+                        height: 1px;
+                        background-color: @color_white;
+                        top: 10px;
+                        left: 280px;
+                    }
+
+                    &::before {
+                        position: absolute;
+                        content: '';
+                        display: inline-block;
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 50%;
+                        background-color: @color_white;
+                        top: -24px;
+                        left: 70px;
+                    }
+
+
+                }
+                
+            }
+
+            .left {
+                position: relative;
+                left: 50px;
+            }
+        }
     }
-    .page__text{
-        
-    };
-    &.animated{
-        .page__title-h1 {
-            .animated({
-                .fadeInRight();
-                // .repeat(2);
-            });
-        }
-        
-        .page__text{
-            .animated({
-                .lightSpeedInRight();
-                //.repeat(3);
-            }, 5s);
-        }
-        .page__text{
-            //.delay(.5s);
-        }
+   
+    
+    .buttonScroll {
+        position: absolute;
+        bottom: 6%;
     }
 }

@@ -17,6 +17,8 @@ const webp = require('gulp-webp');
 // const pngquant = require('imagemin-pngquant');
 const notify = require('gulp-notify');
 const spritesmith = require('gulp.spritesmith');
+const postcss = require('gulp-postcss');
+const pxtoviewport = require('postcss-px-to-viewport');
 
 const isDev = (process.argv.indexOf('--dev') !== -1);
 const isProd = !isDev;
@@ -75,7 +77,7 @@ function images() {
 		// 	progressive: true,
 		// 	interlaced: true
 		// }))
-		.pipe(webp())
+		// .pipe(webp())
 		.pipe(gulp.dest('./build/assets/img/'))
 	// .pipe(notify({ message: 'Images task complete' }));
 }
@@ -101,7 +103,28 @@ function pugProd(){
 }
 
 function styles() {
+	
+
+	let processors = [
+		pxtoviewport({
+			viewportUnit: 'vmin', // что конвертим
+			unitToConvert: 'px',
+			viewportWidth: 1920, // основной контейнер \\ контейнер wrapper рассчитывает от контейнера 1920 TODO: 
+			unitPrecision: 5, // точки после запятой
+			propList: ['*'],// параметры например не перводить межбуквенный интервал или position
+			viewportUnit: 'vw',
+			fontViewportUnit: 'vw',
+			selectorBlackList: ['img'], // /^body$/ 'body'блокирует список тегов или css классов 
+			minPixelValue: 1,
+			mediaQuery: true, // если false то не будет конверить в медиа запросах
+			replace: true,
+			exclude: undefined,
+			include: undefined,
+			landscape: false,
+		})
+	];
 	return gulp.src(lessFiles)
+	
 		.pipe(gulpif(isDev, sourcemaps.init()))
 		.pipe(less())
 		//.pipe(concat('style.css')) 
@@ -118,10 +141,13 @@ function styles() {
 				}
 			  }
 		})))
+		
+		.pipe(postcss(processors))
 		// .pipe(gulpif(isDev, sourcemaps.write()))
 		.pipe(gulp.dest('./build/css'))
 		.pipe(gulpif(isSync, browserSync.stream()));
 }
+
 
 function scripts() {
 	return gulp.src(jsFiles)
@@ -159,9 +185,9 @@ function grid(done) {
 	let settings = require('./smartgrid.js');
 	smartgrid('./src/less/smartgrid', settings);
 
-	settings.offset = '3.1%';
-	settings.filename = 'smart-grid-per';
-	smartgrid('./src/less/smartgrid', settings);
+	// settings.offset = '3.1%';
+	// settings.filename = 'smart-grid-per';
+	// smartgrid('./src/less/smartgrid', settings);
 
 	done();
 }
