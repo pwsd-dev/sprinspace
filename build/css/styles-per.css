@@ -209,6 +209,27 @@ img {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'HalvarBreitschrift-Regular';
+  src: url('../fonts/HalvarBreitschrift/HalvarBreitschrift-Regular.ttf') format('truetype'), url("../fonts/HalvarBreitschrift/HalvarBreitschrift-Regular.woff") format("woff"), url("../fonts/HalvarBreitschrift/HalvarBreitschrift-Regular.eot") format("eot");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HalvarMittel-Regular';
+  src: url('../fonts/HalvarMittel/HalvarMittel-Regular.ttf') format('truetype'), url("../fonts/HalvarMittel/HalvarMittel-Regular.woff") format("woff"), url("../fonts/HalvarMittel/HalvarMittel-Regular.eot") format("eot");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HalvarMittel-Bold';
+  src: url('../fonts/HalvarMittel/HalvarMittel-Bold.ttf') format('truetype'), url("../fonts/HalvarMittel/HalvarMittel-Bold.woff") format("woff"), url("../fonts/HalvarMittel/HalvarMittel-Bold.eot") format("eot");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: 'OpenSans-Regular';
 }
@@ -305,6 +326,18 @@ input:focus {
 
 .debugGrid__z-index-negative {
   z-index: -1;
+}
+
+.page__text {
+  font-family: "HalvarMittel-Regular";
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.page__title-h1 {
+  font-family: "HalvarMittel-Regular";
+  color: #ffffff;
+  font-size: 120px;
 }
 
 .banner.animated .page__title-h1 {
