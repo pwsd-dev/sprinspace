@@ -1,3 +1,32 @@
 .header{
-    
+    background-color: @color_black;
+    padding-top: 1.7%;
+    padding-bottom: 1.6%;
+    &-block {
+        &-nav {
+            
+            .row-flex();
+            &__logo {
+                .col();
+                .size(2.4);
+                padding: 25px 12px 25px 10px;
+                
+                border: 1px solid @color_white;
+            }
+
+            &-link {
+                .col();
+                &_tel {
+                    .shift-left(1.2);
+                }
+            }
+
+            &__menu {
+                .col();
+                .size(2.6);
+                
+            }
+        }
+
+    }
 }
