@@ -1,0 +1,31 @@
+.services {
+    padding-top: 6%;
+    padding-bottom: 7%;
+    &-block {
+        .row-flex();
+        &-descr {
+            .col();
+            .size(3.5);
+            //margin-right: 30px;
+            .page__text_breit_mid {
+                margin-bottom: 3%;
+            }
+
+            .page__text_mid {
+                margin-bottom: 8%;
+            }
+            
+        }
+        &-item {
+            position: relative;
+            left: 70px;
+            .col();
+            .size(2.8);
+            //.shift-left(.2);
+            .page__text_middle {
+                color: @color_black;
+                .size(8);
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.map {
+   &-block {
+        display: flex;
+       &-img {
+            .size(6.5);
+            .shift-left(-1);
+            .page__img {
+                //.size(12);
+            }
+       }
+
+       &-description {
+           .size(5);
+           .shift-left(1);
+           padding-top: 10%;
+           .page__text_midb {
+               margin-bottom: 7%;
+               padding-left: 8%;
+               position: relative;
+               &::before {
+                   content: '';
+                   position: absolute;
+                   background-image: url(../assets/img/descrbefore.svg);
+                   background-repeat: no-repeat;
+                   display: inline-block;
+                   height: 42px;
+                   width: 37px;
+                   left: -12px;
+               }
+           }
+
+           .page__text_sm {
+               margin-bottom: 7%;
+           }
+
+           .page__text_sm-else {
+               .size(11);
+                font-family: "@{HalvarMittel}-Regular";
+                color: @color_black;
+                font-size: 22px;
+                line-height: 25px;
+           }
+       }
+   } 
+}
