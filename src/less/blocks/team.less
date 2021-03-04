@@ -86,6 +86,10 @@
                         position: relative;
                         top: 50px;
                         left: 180px;
+                        .laptopMid-block({
+                           left: 30px;
+                           top: 10px;
+                        });
         
                     }
 
@@ -120,9 +124,19 @@
             position: relative;
             .size(6);
             .shift-left(5);
+            .laptopMid-block({
+                .shift-left(4);
+            });
+            .laptopMini-block({
+                //.shift-left(4);
+            });
             .page__img {
                 position: absolute;
                 top: 150px;
+                .laptopMid-block({
+                    position: absolute;
+                    top: 120px;
+                });
             }
 
             .page__title-h3 {

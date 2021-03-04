@@ -8,11 +8,11 @@ module.exports = {
     },
 	breakPoints: {
         laptopMid: {
-            width: "1550px",
+            width: "1570px",
             fields: "15px"
         },
         laptopMini: {
-            width: "1200px",
+            width: "1220px",
             fields: "15px"
         },
         ipad: {

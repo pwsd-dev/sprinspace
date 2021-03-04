@@ -3,16 +3,35 @@
     padding-top: 1.7%;
     padding-bottom: 1.6%;
     position: sticky;
+    
+    .xs-block({
+        padding-top: 7%;
+        width: 100%;
+        height: 300px;
+    });
     &-block {
+        
         &-nav {
             position: relative;
             .row-flex();
+            .xs-block({
+                flex-wrap: nowrap;
+                //overflow: hidden;
+                
+            });
             &__logo {
                 .col();
                 .size(3);
+                .xxs-block({
+                    .size(5);
+                    .shift-left(-2);
+                    padding: 25px 35px 25px 30px;
+                    
+                });
                 padding: 25px 12px 25px 30px;
                 
                 border: 1px solid @color_white;
+                
                 
             }
 
@@ -28,6 +47,10 @@
                 .shift-left(-.27);
                 //.col();
                 .size(1.3);
+                .xs-block({
+                    .size(5);
+                    padding: 45px 12px 25px 125px;
+                });
                 
             }
 
@@ -35,13 +58,22 @@
                 border: 1px solid @color_white;
                 padding: 25px 12px 25px 75px;
                 border-left: none;
+                .xs-block({
+                   // display: none;
+                });
                 .shift-left(-.15);
                 .size(7.1);
+                .xs-block({
+                    display: none;
+                });
                 &-link {
-                    
+                    .xs-block({
+                        //display: none;
+                    });
                     .col();
                     &_tel {
                         .shift-left(1.4);
+                        
                         position: relative;
                         //border-left: 1px solid @color_white;
                         &::before {
@@ -58,7 +90,35 @@
                     }
                 }
             }
+            &-phone {
+                
+                display: none;
+                .xs-block({
+                    display: block;
+                    
+                    .size(5);
+                    .shift-right(-2);
+                    border: 1px solid @color_white;
+                    border-left: none;
+                    .page__link {
+                        font-size: 45px;
+                        position: relative;
+                        top: 30px;
+                        left: -40px;
+                        padding: 65px 15px 25px 30px;
+                        border-left: none;
+                        &::before {
+                            display: none;
+                        }
+                    }
+                    
+                });
+
+                
+            }
         }
 
     }
+
+    
 }

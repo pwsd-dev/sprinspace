@@ -1,6 +1,7 @@
 .footer {
     background-color: @color_black;
     padding-top: 1%;
+    padding-bottom: 2%;
     &-block {
         &-row {
             .row-flex();
@@ -12,6 +13,52 @@
                 .col();
                 text-transform: uppercase;
                 .shift-left(.2);
+                margin-bottom: 4%;
+            }
+
+            &-too {
+                .row-flex();
+                
+                .page__text {
+                    .col();
+                    .size(1.7);
+                   
+                    //.shift-left(1);
+                }
+
+                .page__text_sm {
+                    .col();
+                    margin-bottom: 4%;
+                    .size(3.2);
+                    color: @color_white;
+                }            
+            }
+
+            &-third {
+                .row-flex();
+                .page__text_sm {
+                    .col();
+                    
+                    .size(3.2);
+                    position: relative;
+                    top: 20px;
+                    color: @color_white;
+                }
+                
+                &-soc {
+                    .row-flex();
+                    .shift-left(1.7);
+                    
+                    &-vk {
+                        margin: 0px 16px 0px 20px;
+                    }
+
+                    .page__text_breit_versm-else {
+                        position: relative;
+                        left: 140px;
+                        top: 20px;
+                    }
+                }
             }
         }
     }
