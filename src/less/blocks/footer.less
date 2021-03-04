@@ -1,0 +1,18 @@
+.footer {
+    background-color: @color_black;
+    padding-top: 1%;
+    &-block {
+        &-row {
+            .row-flex();
+            .page__img {
+                .col();
+                .size(3);
+            }
+            .page__text_middle {
+                .col();
+                text-transform: uppercase;
+                .shift-left(.2);
+            }
+        }
+    }
+}
