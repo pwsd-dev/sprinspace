@@ -2,16 +2,32 @@
     background-color: @color_pink;
     padding-top: 7%;
     padding-bottom: 5%;
+    .xs-block({
+        
+        
+        padding-top: 10%;
+        padding-bottom: 10%;
+    });
     &-block {
         .row-flex();
         &-descr {
             .col();
             .size(8);
+            .xs-block({
+                .shift-left(-1);
+                .size(12);
+            });
             position: relative;
             .page__text_breit_big {
                 margin-bottom: 5.5%;
                 position: relative;
                 text-transform: uppercase;
+                .xs-block({
+                    font-size: 135px;
+                    
+                    padding-top: 3%;
+                    padding-bottom: 10%;
+                });
                 
                 
             }
@@ -20,6 +36,7 @@
                 position: absolute;
                 left: 550px;
                 //top: 180px;
+                
                 
                 &_1, &_2, &_3, &_4 {
                     position: absolute;
@@ -32,7 +49,14 @@
                     .laptopMid-block({
                         position: absolute;
                         top: 10px;
-                        left: 270px;
+                        left: 300px;
+                        .size(3);
+                    });
+
+                    .xs-block({
+                        position: absolute;
+                        top: 13px;
+                        left: 160px;
                         .size(3);
                     });
                 }
@@ -42,14 +66,20 @@
                     left: 630px;
                     .laptopMid-block({
                         position: absolute;
-                        top: 98px;
-                        left: 470px;
+                        top: 117px;
+                        left: 570px;
                         .size(3);
                     });
                     .laptopMini-block({
                         position: absolute;
                         top: 85px;
                         left: 410px;
+                        .size(3);
+                    });
+                    .xs-block({
+                        position: absolute;
+                        top: 90px;
+                        left: 250px;
                         .size(3);
                     });
                 }
@@ -59,14 +89,20 @@
                     left: 630px;
                     .laptopMid-block({
                         position: absolute;
-                        top: 189px;
-                        left: 470px;
+                        top: 229px;
+                        left: 570px;
                         .size(3);
                     });
                     .laptopMini-block({
                         position: absolute;
                         top: 85px;
                         left: 410px;
+                        .size(3);
+                    });
+                    .xs-block({
+                        position: absolute;
+                        top: 170px;
+                        left: 250px;
                         .size(3);
                     });
                 }
@@ -76,14 +112,20 @@
                     left: 530px;
                     .laptopMid-block({
                         position: absolute;
-                        top: 280px;
-                        left: 390px;
+                        top: 330px;
+                        left: 440px;
                         .size(3);
                     });
                     .laptopMini-block({
                         position: absolute;
                         top: 85px;
                         left: 410px;
+                        .size(3);
+                    });
+                    .xs-block({
+                        position: absolute;
+                        top: 245px;
+                        left: 220px;
                         .size(3);
                     });
                 }
@@ -95,6 +137,10 @@
             .shift-left(.8);
             .page__img {
                 padding-top: 40%;
+                .xs-block({
+                    display: none;
+                });
+                
             }
         }
     }
