@@ -3,22 +3,62 @@
     padding-bottom: 7%;
     &-block {
         .row-flex();
+        .xs-block({
+            
+            flex-direction: column;
+        });
         &-descr {
             .col();
             .size(3.5);
+            .page__link-black {
+                .xs-block({
+                    font-size: 160px;
+                    position: relative;
+                    left: -145px;
+                    .size(20);
+                    
+                });
+            }
+            .xs-block({
+                font-size: 180px;
+                .size(20);
+                
+            });
             //margin-right: 30px;
             .page__text_breit_mid {
                 margin-bottom: 3%;
+                .xs-block({
+                    font-size: 200px;
+                    .shift-left(-1);
+                    
+                    
+                });
             }
 
             .page__text_mid {
                 margin-bottom: 8%;
+                .xs-block({
+                    font-size: 100px;
+                    line-height: 140px;
+                    .size(10);
+                    .shift-left(-1);
+                    
+                    
+                });
             }
             
         }
         &-item {
             position: relative;
             left: 70px;
+           
+
+
+            .xs-block({
+                //display: flex;
+                
+            });
+            
             .col();
             .size(2.8);
             //.shift-left(.2);
@@ -28,4 +68,52 @@
             }
         }
     }
+
+    .mob {
+                
+        .xs-block({
+            
+            display: none;
+        });
+    }
+
+    .mob-one {
+        .xs-block({
+            position: relative;
+            left: -180px;
+            top: 150px;
+            .size(8);
+        });
+
+        .page__text_middle {
+            .xs-block({
+                
+                font-size: 100px;
+                line-height: 100px;
+                position: relative;
+                left: 200px;
+                top: 240px;
+            });
+        }
+    }
+
+    .mob-two {
+        .xs-block({
+            position: relative;
+            left: 670px;
+            top: -680px;
+            .size(8);
+        });
+        .page__text_middle {
+            .xs-block({
+                
+                font-size: 100px;
+                line-height: 100px;
+                position: relative;
+                left: 200px;
+                top: 240px;
+            });
+        }
+    }
+
 }

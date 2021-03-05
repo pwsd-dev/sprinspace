@@ -1,20 +1,92 @@
 .plan {
     padding-top: 150px;
     padding-bottom: 150px;
+    .xs-block({
+        
+        padding-top: 25%;
+        padding-bottom: 25%;
+    });
     &-block {
         &-row {
             .row-flex();
+            
             &-item {
                 &_1, &_2, &_3, &_4, &_5, &_6 {
                     .shift-left(.4);
                     .page__text_middle-black {
                         text-transform: uppercase;
                         padding-bottom: 14%;
+                        .xs-block({
+                            display: none;
+                        });
                     }
                 }
 
                 &_1 {
                     padding-left: 6.5%;
+                }
+
+                &_mob {
+                    
+                    
+                    display: none;
+                    .row_mob {
+                        display: flex;
+                        flex-direction: nowrap;
+                        
+                        &-down {
+                            display: flex;
+                            flex-direction: nowrap;
+                            //font-size: 80px;
+                            .page__text_middle-black {
+                                &_4, &_5, &_6 {
+                                    padding-top: 8%;
+                                    padding-bottom: 12%;
+                                    font-size: 80px;
+                                }
+
+                                &_4 {
+                                    position: relative;
+                                    left: -190px;
+                                }
+
+                                &_6 {
+                                    position: relative;
+                                    right: -180px;
+                                }
+
+                                
+                            }
+                        }
+                    }
+                    .page__text_middle-black {
+                        margin-bottom: 140px;
+                        //font-size: 80px;
+                        &_1, &_2, &_3 {
+                            font-size: 75px;
+                        }
+
+                        &_1 {
+                            position: relative;
+                            left: -190px;
+                        }
+
+                        &_3 {
+                            position: relative;
+                            right: -180px;
+                        }
+                        //.size(12);
+                    }
+                    .xs-block({
+                       display: block;
+                       flex-wrap: nowrap;
+                       //.col();
+                       //margin-right: 15px;
+                       //font-size: 80;
+                       
+                    
+                    });
+                    
                 }
 
 
@@ -26,6 +98,23 @@
         &-img {
             .page__img {
                 margin-bottom: 5%;
+                //display: none;
+                .xs-block({
+                    .shift-left(-2);
+                    .size(14);
+                    height: 182px;
+                    display: none;
+                });
+            }
+
+            &-mob {
+                display: none;
+                .xs-block({
+                    display: block;
+                    .size(16);
+                    .shift-left(-3);
+                    //height: 182px;
+                });
             }
         }
 
@@ -38,21 +127,54 @@
                 position: relative;
                 .size(4);
                 .col();
+                .xs-block({
+                    .size(14);
+                    width: 100%;
+                    flex-wrap: nowrap;
+                    font-size: 180px;
+                    line-height: 160px;
+                    top: 100px;
+                    left: -200px;
+                });
                 span {
                     position: absolute;
                     top: 60px;
                     left: 110px;
+                    .xs-block({
+                        left: 700px;
+                        flex-wrap: nowrap;
+                        top: 0;
+                        //padding-bottom: 25%;
+                    });
                     &::after {
                         content: '';
                         display: inline-block;
 
                     }
                 }
+
+                sub {
+                    .xs-block({
+                        display: none;
+                    }); 
+                }
             }
 
             .page__text_mid {
                 .size(7);
                 .col();
+                .xs-block({
+                    padding-top: 23%;
+                    position: relative;
+                    left: -40px;
+                    width: 100%;
+                    //.size(16);
+                    flex-wrap: nowrap;
+                    font-size: 100px;
+                    line-height: 160px;
+                    top: 100px;
+                    left: -200px;
+                });
                 padding-top: 3%;
             }
         }
