@@ -4,9 +4,15 @@
     background-color: @color_black;
     &-block {
         .row-flex();
+        .xs-block({
+            flex-direction: column;
+        });
         &-img {
             .col();
             .size(6);
+            .xs-block({
+                .size(12);
+            });
         }
         &-description {
             .size(6);
@@ -17,6 +23,12 @@
             .page__text_midb {
                 color: @color_white;
                 margin-bottom: 5%;
+                .xs-block({
+                    .size(23);
+                    .shift-left(-3);
+                    font-size: 100px;
+                    line-height: 170px;
+                });
             }
 
             .page__text_breit_big {
