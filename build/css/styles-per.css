@@ -1307,7 +1307,7 @@ input:focus {
   .space-block-descr .page__img_3 {
     position: absolute;
     top: 229px;
-    left: 570px;
+    left: 470px;
     width: 21.9%;
   }
 
@@ -1356,21 +1356,21 @@ input:focus {
   .space-block-descr .page__img_2 {
     position: absolute;
     top: 85px;
-    left: 410px;
+    left: 440px;
     width: 21.9%;
   }
 
   .space-block-descr .page__img_3 {
     position: absolute;
-    top: 85px;
+    top: 185px;
     left: 410px;
     width: 21.9%;
   }
 
   .space-block-descr .page__img_4 {
     position: absolute;
-    top: 85px;
-    left: 410px;
+    top: 265px;
+    left: 370px;
     width: 21.9%;
   }
 }

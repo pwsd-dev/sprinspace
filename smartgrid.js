@@ -8,19 +8,19 @@ module.exports = {
     },
 	breakPoints: {
         laptopMid: {
-            width: "1570px",
+            width: "1520px",
+            fields: "15px"
+        },
+        lg:{
+            width: "1460px",
             fields: "15px"
         },
         laptopMini: {
-            width: "1220px",
+            width: "1290px",
             fields: "15px"
         },
         ipad: {
             width: "1024px",
-            fields: "15px"
-        },
-        md: {
-            width: "920px",
             fields: "15px"
         },
 		md: {
@@ -28,18 +28,19 @@ module.exports = {
             fields: "15px"
         },
         sm: {
-            width: "720px"
+            width: "720px",
+
         },
         xs: {
             width: "576px"
         },
         xxs: {
-            width: "420px",
+            width: "420px"
             /*
             offset: "10px",
             fields: "5px"
             */
-        }
+        },
 	},
     //detailedCalc: true
 };
