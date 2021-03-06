@@ -227,7 +227,14 @@
         &-eyes {
             position: relative;
             .size(6);
-            .shift-left(5);
+            .shift-left(3.2);
+            @media screen and (max-width: 1441px) {
+                .shift-left(3.1);
+            }
+
+            @media screen and (max-width: 1567px) {
+                .shift-left(3.1);
+            }
             .xs-block({
                 .size(16);
                 .shift-left(-2);

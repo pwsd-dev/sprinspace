@@ -1,8 +1,9 @@
 @columns: 12;
 @atom: (100% / @columns);
 
-@break_laptopMid: 1550px;
-@break_laptopMini: 1200px;
+@break_lg: 1920px;
+@break_laptopMid: 1520px;
+@break_laptopMini: 1290px;
 @break_ipad: 1024px;
 @break_md: 920px;
 @break_sm: 720px;
@@ -10,6 +11,7 @@
 @break_xxs: 420px;
 
 @offset: 3.1%;
+@offset_lg: @offset;
 @offset_laptopMid: @offset;
 @offset_laptopMini: @offset;
 @offset_ipad: @offset;
@@ -19,6 +21,7 @@
 @offset_xxs: @offset;
 
 @offset_one_side: (@offset / 2);
+@offset_lg_one_side: (@offset_lg / 2);
 @offset_laptopMid_one_side: (@offset_laptopMid / 2);
 @offset_laptopMini_one_side: (@offset_laptopMini / 2);
 @offset_ipad_one_side: (@offset_ipad / 2);
@@ -28,6 +31,7 @@
 @offset_xxs_one_side: (@offset_xxs / 2);
 
 @fields: 30px;
+@fields_lg: 15px;
 @fields_laptopMid: 15px;
 @fields_laptopMini: 15px;
 @fields_ipad: 15px;
@@ -36,6 +40,11 @@
 .wrapper-full(){
     padding-left: @fields;
     padding-right: @fields;
+
+    .lg-block({
+        padding-left: @fields_lg;
+        padding-right: @fields_lg;
+    });
 
     .laptopMid-block({
         padding-left: @fields_laptopMid;
@@ -113,6 +122,10 @@
     width: @atom * @n - @offset;
 }
 
+.size-lg(@n){
+    .lg(width, @atom * @n - @offset_lg);
+}
+
 .size-laptopMid(@n){
     .laptopMid(width, @atom * @n - @offset_laptopMid);
 }
@@ -165,6 +178,32 @@
 
 .shift-padding-right(@n){
     padding-right: @atom * @n + @offset_one_side;
+}
+
+.shift-lg(@n){
+    .lg(margin-left, @atom * @n + @offset_lg_one_side);
+    .lg(margin-right, @atom * @n + @offset_lg_one_side);
+}
+
+.shift-lg-left(@n){
+    .lg(margin-left, @atom * @n + @offset_lg_one_side);
+}
+
+.shift-lg-right(@n){
+    .lg(margin-right, @atom * @n + @offset_lg_one_side);
+}
+
+.shift-lg-padding(@n){
+    .lg(padding-left, @atom * @n + @offset_lg_one_side);
+    .lg(padding-right, @atom * @n + @offset_lg_one_side);
+}
+
+.shift-lg-padding-left(@n){
+    .lg(padding-left, @atom * @n + @offset_lg_one_side);
+}
+
+.shift-lg-padding-right(@n){
+    .lg(padding-right, @atom * @n + @offset_lg_one_side);
 }
 
 .shift-laptopMid(@n){
@@ -347,6 +386,18 @@
 
 .shift-xxs-padding-right(@n){
     .xxs(padding-right, @atom * @n + @offset_xxs_one_side);
+}
+
+.lg(@name, @value){
+    @media screen and (max-width: @break_lg){
+        @{name}: @value;
+    }
+}
+
+.lg-block(@content){
+    @media screen and (max-width: @break_lg){
+        @content();
+    }
 }
 
 .laptopMid(@name, @value){

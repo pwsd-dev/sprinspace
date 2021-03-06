@@ -43,9 +43,15 @@
                    background-image: url(../assets/img/descrbefore.svg);
                    background-repeat: no-repeat;
                    display: inline-block;
-                   height: 42px;
-                   width: 37px;
+                   height: 62px;
+                   width: 57px;
                    left: -12px;
+                   @media screen and (max-width: 1200px) {
+                    width: 67px;
+                    left:-25px;
+                    height: 70px;
+                    top: -30px;
+                    }
                }
            }
            .page__text_breit_small {
@@ -59,7 +65,7 @@
            }
 
            .page__text_sm {
-               margin-bottom: 20%;
+               margin-bottom: 7%;
                .xs-block({
                 .shift-left(-8);
                 .size(65);

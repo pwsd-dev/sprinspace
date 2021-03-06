@@ -15,27 +15,20 @@
             });
         }
         &-description {
+            display: flex;
+            flex-direction: column;
             .size(6);
             .col();
-            padding-top: 5%;
-            .page__text_breit_big , 
-            .page__text_midb,
-            .page__text_midb {
-                color: @color_white;
+            .page__link-contacts {
                 margin-bottom: 5%;
-                .xs-block({
-                    .size(23);
-                    .shift-left(-3);
-                    font-size: 100px;
-                    line-height: 170px;
-                });
+                color: #fff;
             }
-
-            .page__text_breit_big {
-                
-                text-transform: uppercase;
+            padding-top: 5%;
+            .page__link-contacts-else {
+                margin-bottom: 5%;
+                text-transform: none;
+                color: #fff;
             }
-
         }
     }
 }

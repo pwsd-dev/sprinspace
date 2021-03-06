@@ -7,14 +7,16 @@ module.exports = {
         fields: "30px"
     },
 	breakPoints: {
+        lg: {
+            width: "1920px",
+            fields: "15px"
+        },
+
         laptopMid: {
             width: "1520px",
             fields: "15px"
         },
-        lg:{
-            width: "1460px",
-            fields: "15px"
-        },
+        
         laptopMini: {
             width: "1290px",
             fields: "15px"
@@ -41,6 +43,7 @@ module.exports = {
             fields: "5px"
             */
         },
+
 	},
     //detailedCalc: true
 };
