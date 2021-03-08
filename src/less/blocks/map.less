@@ -1,4 +1,5 @@
 .map {
+    padding-bottom: 2%;
     .xs-block({
         overflow: hidden;
         padding-bottom: 20%;
@@ -11,6 +12,12 @@
         });
        &-img {
             .size(6.5);
+            position: relative;
+            top: 65px;
+            @media screen and (max-width: 1367px) {
+                top: 20px;
+            }
+            
             .shift-left(-1);
             .page__img {
                 //.size(12);
