@@ -12,7 +12,8 @@
    &-block {
     
        &-logo {
-           
+           z-index: 300;
+           position: relative;
            .row-flex();
             .page__img {
                 .size(5);
@@ -50,7 +51,9 @@
        }
 
        &-description {
+           z-index: 300;
            padding-top: 8%;
+           position: relative;
             .page__text_middle-black {
             margin-bottom: 0.3%;
             .xs-block({
@@ -61,6 +64,7 @@
 
            .page__text_middle-black-mob {
                 display: none;
+                z-index: 300;
                 .xs-block({
                     display: block;
                     font-family: "@{HalvarMittel}-Regular";
@@ -72,6 +76,30 @@
                     .shift-left(-2);
                 });
            }
+       }
+
+       &-img {
+           position: absolute;
+           left: 750px;
+           top: 1300px;
+           z-index: 20;
+           &-2 {
+            position: absolute;
+            left: 1200px;
+            top: 1370px;
+            z-index: 20;
+           }
+       }
+
+       &-arrow {
+        .page__img {
+            position: relative;
+            left: 990px;
+            top: 400px;
+        }
+       }
+       .min {
+           width: 300px;
        }
    } 
 }

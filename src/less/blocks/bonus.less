@@ -31,6 +31,39 @@
         
             });
         }
+
+        &__slider {
+            position: relative;
+            .tns-outer {
+                width: 1320px;
+            }
+            .tns-inner {
+                overflow: hidden;
+            }
+            .page__img {
+                .shift-left(.01);
+            }
+            //.shift-left(1.9);
+            
+        }
+    }
+
+    .bonus-btn_next {
+        transform: rotate(180deg);
+        border: transparent;
+        background: transparent;
+        position: relative;
+        top: -400px;
+        left: 1100px;
+    }
+
+    .bonus-btn_prev {
+        
+        border: transparent;
+        background: transparent;
+        position: relative;
+        top: -400px;
+        left: 1085px;
     }
 
     .page__img {
@@ -40,4 +73,8 @@
     
         });
     }
+}
+
+#bonusSlider {
+    display: flex;
 }
