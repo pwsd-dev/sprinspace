@@ -1598,6 +1598,155 @@ input:focus {
   }
 }
 
+@media screen and (max-width: 1680px) {
+  .general {
+    overflow: hidden;
+  }
+
+  .general-block-logo .page__text_breit {
+    margin-left: -1.78333333%;
+  }
+
+  .general-block-img {
+    top: 1130px;
+    left: 677px;
+    overflow: hidden;
+    width: 28.56666667%;
+  }
+
+  .general-block-img-2 {
+    top: 1200px;
+    left: 1185px;
+    width: 28.15%;
+    overflow: hidden;
+  }
+
+  .general-block-arrow .page__img {
+    left: 930px;
+    top: 340px;
+  }
+
+  .plan {
+    padding-bottom: 4.6875vw;
+  }
+
+  .map {
+    padding-bottom: 5%;
+  }
+
+  .space-block-descr .page__img_1 {
+    top: 15px;
+    left: 330px;
+  }
+
+  .space-block-descr .page__img_2 {
+    top: 128px;
+    left: 570px;
+  }
+
+  .space-block-descr .page__img_3 {
+    top: 241px;
+    left: 568px;
+  }
+
+  .space-block-descr .page__img_4 {
+    top: 354px;
+    left: 480px;
+  }
+
+  .space-block-img {
+    position: relative;
+    top: -20px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .banner .buttonScroll .page__img {
+    display: none;
+  }
+
+  .banner .buttonScroll-mid {
+    display: block;
+    position: absolute;
+    bottom: 10%;
+  }
+
+  .general {
+    overflow: hidden;
+  }
+
+  .general-block-logo .page__text_breit {
+    margin-left: -0.95%;
+  }
+
+  .general-block-img {
+    top: 1130px;
+    left: 670px;
+    overflow: hidden;
+    width: 28.56666667%;
+  }
+
+  .general-block-img-2 {
+    top: 1200px;
+    left: 1150px;
+    width: 26.9%;
+    overflow: hidden;
+  }
+
+  .general-block-arrow .page__img {
+    left: 880px;
+    top: 340px;
+  }
+
+  .space-block-descr .page__img_1 {
+    top: 15px;
+    left: 310px;
+  }
+
+  .space-block-descr .page__img_2 {
+    top: 123px;
+    left: 550px;
+  }
+
+  .space-block-descr .page__img_3 {
+    top: 230px;
+    left: 550px;
+  }
+
+  .space-block-descr .page__img_4 {
+    top: 337px;
+    left: 450px;
+  }
+
+  .space-block-img {
+    position: relative;
+    top: -20px;
+  }
+
+  .bonus-block__slider {
+    margin-left: -1.78333333%;
+  }
+
+  .bonus-block__slider .tns-outer {
+    width: 70.83333vw;
+  }
+
+  .bonus-block__slider .tns-inner {
+    width: 65.10417vw;
+    overflow: hidden;
+  }
+
+  .bonus .bonus-btn_next {
+    top: -22.39583vw;
+    left: 55.20833vw;
+  }
+
+  .bonus .bonus-btn_prev {
+    top: -22.13542vw;
+    left: 55.20833vw;
+  }
+}
+
 @media screen and (max-width: 1567px) {
   .map {
     padding-bottom: 5%;

@@ -3,6 +3,12 @@
     padding-top: 8%;
     padding-bottom: 25%;
     background-color: @color_yellow;
+    @media screen and (max-width: 1680px) {
+        overflow: hidden;
+    }
+    @media screen and (max-width: 1600px) {
+        overflow: hidden;
+    }
     @media screen and (max-width: 1566px) {
         overflow: hidden;
     }
@@ -40,6 +46,12 @@
 
             .page__text_breit {
                 .shift-left(-.8);
+                @media screen and (max-width: 1680px) {
+                    .shift-left(-.4);
+                }
+                @media screen and (max-width: 1600px) {
+                    .shift-left(-.3);
+                }
                 @media screen and (max-width: 1566px) {
                     .shift-left(.1);
                 }
@@ -105,6 +117,18 @@
            left: 750px;
            top: 1300px;
            z-index: 20;
+           @media screen and (max-width: 1680px) {
+            top: 1130px;
+            left: 677px;
+            overflow: hidden;
+            .size(3.8);
+            }
+           @media screen and (max-width: 1600px) {
+            top: 1130px;
+            left: 670px;
+            overflow: hidden;
+            .size(3.8);
+            }
            @media screen and (max-width: 1566px) {
             top: 1050px;
             left: 670px;
@@ -137,6 +161,20 @@
             left: 1200px;
             top: 1370px;
             z-index: 20;
+            @media screen and (max-width: 1680px) {
+                top: 1200px;
+                left: 1185px;
+                .size(3.75);
+                //.shift-left(-3.9);
+                overflow: hidden;
+            }
+            @media screen and (max-width: 1600px) {
+                top: 1200px;
+                left: 1150px;
+                .size(3.6);
+                //.shift-left(-3.9);
+                overflow: hidden;
+            }
             @media screen and (max-width: 1566px) {
                 top: 1200px;
                 left: 1100px;
@@ -175,6 +213,14 @@
             position: relative;
             left: 990px;
             top: 400px;
+            @media screen and (max-width: 1680px) {
+                left: 930px;
+                top: 340px;
+            }
+            @media screen and (max-width: 1600px) {
+                left: 880px;
+                top: 340px;
+            }
             @media screen and (max-width: 1566px) {
                 left: 862px;
                 top: 320px;
@@ -196,6 +242,7 @@
 
         &-mid {
             display: none;
+            
             @media screen and (max-width: 1024px) {
 
                 display: block;

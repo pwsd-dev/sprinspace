@@ -38,13 +38,23 @@
 
         &__slider {
             position: relative;
+            @media screen and (max-width: 1600px) {
+                .shift-left(-.4); 
+            }
             @media screen and (max-width: 1441px) {
                 .shift-left(-.4);  
             }
             .tns-outer {
                 width: 1320px;
+                @media screen and (max-width: 1600px) {
+                    width: 1360px;
+                }
             }
             .tns-inner {
+                @media screen and (max-width: 1600px) {
+                    width: 1250px;
+                    overflow: hidden;
+                }
                 overflow: hidden;
             }
             .page__img {
@@ -65,6 +75,10 @@
         position: relative;
         top: -400px;
         left: 1100px;
+        @media screen and (max-width: 1600px) {
+            top: -430px;
+            left: 1060px;
+        }
         @media screen and (max-width: 1441px) {
             top: -430px;
             left: 1060px;
@@ -78,6 +92,10 @@
         position: relative;
         top: -400px;
         left: 1085px;
+        @media screen and (max-width: 1600px) {
+            top: -425px;
+            left: 1060px;
+        }
         @media screen and (max-width: 1441px) {
             top: -425px;
             left: 1060px;

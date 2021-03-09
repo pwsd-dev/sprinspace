@@ -246,6 +246,9 @@
             bottom: 90px;
             height: 30px;
             width: 40px;
+            @media screen and (max-width: 1600px) {
+                display: none;
+            }
             
             @media screen and (max-width: 1280px) {
                 display: none;
@@ -261,6 +264,11 @@
 
         &-mid {
             display: none;
+            @media screen and (max-width: 1600px) {
+                display: block;
+                position: absolute;
+                bottom: 10%;
+            }
             @media screen and (max-width: 1440px) {
                 //display: block;
                 position: absolute;
