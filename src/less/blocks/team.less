@@ -88,6 +88,9 @@
                         .col();
                         .size(6);
                         .shift-right(-1);
+                        @media screen and (max-width: 1024px) {
+                            .shift-right(-1.5);
+                        }
                         .xs-block({
                             
                             .shift-left(-14);
@@ -265,6 +268,9 @@
                 position: relative;
                 top: 360px;
                 left: 100px;
+                @media screen and (max-width: 1024px) {
+                    top: 400px;
+                }
                 .xs-block({
                     position: relative;
                     font-size: 120px;
@@ -281,6 +287,9 @@
                 color: @color_white;
                 opacity: 0.7;
                 .size(9);
+                @media screen and (max-width: 1024px) {
+                    top: 410px;
+                }
                 .xs-block({
                     .size(5);
                     position: relative;
@@ -294,6 +303,10 @@
 
             .page__btn {
                 .size(6);
+                @media screen and (max-width: 1024px) {
+                    top: 510px;
+                    left: 330px;
+                }
                 .xs-block({
                     .size(5);
                     position: relative;

@@ -3,6 +3,16 @@
     padding-top: 8%;
     padding-bottom: 25%;
     background-color: @color_yellow;
+    @media screen and (max-width: 1566px) {
+        overflow: hidden;
+    }
+    @media screen and (max-width: 1441px) {
+        overflow: hidden;
+    }
+    @media screen and (max-width: 1280px) {
+        overflow: hidden;
+    }
+    
     .xs-block({
         
         height: 613px;
@@ -22,11 +32,17 @@
                     .size(10);
                     .shift-left(-2.3);
                 });
+
+                @media screen and (max-width: 1024px) {
+                    .shift-left(.2);
+                }
             }
 
             .page__text_breit {
                 .shift-left(-.8);
-
+                @media screen and (max-width: 1566px) {
+                    .shift-left(.1);
+                }
                 .laptopMid-block({
                     .shift-left(.2);
                 });
@@ -60,6 +76,12 @@
                 display: none;
                 
             });
+
+            @media screen and (max-width: 1024px) {
+                .shift-left(.2);
+                font-size: 45px;
+                line-height: 55px;
+            }
            }
 
            .page__text_middle-black-mob {
@@ -83,11 +105,68 @@
            left: 750px;
            top: 1300px;
            z-index: 20;
+           @media screen and (max-width: 1566px) {
+            top: 1050px;
+            left: 670px;
+            overflow: hidden;
+            .size(3.8);
+            }
+           @media screen and (max-width: 1441px) {
+            top: 1000px;
+            left: 628px;
+            .size(3.1);
+            }
+
+            @media screen and (max-width: 1281px) {
+                top: 900px;
+                left: 556px;
+            }
+
+            @media screen and (max-width: 1200px) {
+                top: 860px;
+                left: 515px;
+            }
+
+            @media screen and (max-width: 1024px) {
+                top: 720px;
+                left: 450px;
+                .size(3.8);
+            }
            &-2 {
             position: absolute;
             left: 1200px;
             top: 1370px;
             z-index: 20;
+            @media screen and (max-width: 1566px) {
+                top: 1200px;
+                left: 1100px;
+                .size(3.6);
+                //.shift-left(-3.9);
+                overflow: hidden;
+            }
+            @media screen and (max-width: 1441px) {
+                top: 1050px;
+                left: 1000px;
+                .size(3.9);
+                //.shift-left(-3.9);
+                overflow: hidden;
+            }
+
+            @media screen and (max-width: 1281px) {
+                top: 995px;
+                left: 870px;
+            }
+
+            @media screen and (max-width: 1200px) {
+                top: 965px;
+                left: 820px;
+            }
+
+            @media screen and (max-width: 1024px) {
+                top: 820px;
+                left: 760px;
+                .size(3.4);
+            }
            }
        }
 
@@ -96,6 +175,41 @@
             position: relative;
             left: 990px;
             top: 400px;
+            @media screen and (max-width: 1566px) {
+                left: 862px;
+                top: 320px;
+            }
+            @media screen and (max-width: 1441px) {
+                left: 772px;
+                top: 250px;
+            }
+
+            @media screen and (max-width: 1281px) {
+                left: 670px;
+                top: 250px;
+            }
+
+            @media screen and (max-width: 1024px) {
+                display: none;
+            }
+        }
+
+        &-mid {
+            display: none;
+            @media screen and (max-width: 1024px) {
+
+                display: block;
+                
+            }
+            .page__img {
+                @media screen and (max-width: 1024px) {
+
+                    display: block;
+                    position: relative;
+                    left: 550px;
+                    top: 230px;
+                }
+            }
         }
        }
        .min {

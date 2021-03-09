@@ -110,6 +110,15 @@
                 color: #fff;
                 opacity: .4;
                 background-image: url(../assets/img/select.svg);
+                @media screen and (max-width: 1281px) {
+                    top: -195px;
+                    width: 30px;
+                }
+                @media screen and (max-width: 1024px) {
+                    top: -198px;
+                    left: 320px;
+                    width: 30px;
+                }
             }
             .select-1 {
                 position: relative;
@@ -166,6 +175,14 @@
                         color: #fff;
                         opacity: .4;
                         background-image: url(../assets/img/select.svg);
+                        @media screen and (max-width: 1281px) {
+                            top: -62px;
+                            width: 30px;
+                        }
+                        @media screen and (max-width: 1024px) {
+                            top: -62px;
+                            width: 30px;
+                        }
                     }
             }
 
@@ -203,6 +220,17 @@
                         color: #fff;
                         opacity: .4;
                         background-image: url(../assets/img/select.svg);
+                        @media screen and (max-width: 1281px) {
+                            left: 660px;
+                            top: -133px;
+                            width: 30px;
+                        }
+                        @media screen and (max-width: 1024px) {
+                            left: 660px;
+                            top: -133px;
+                            width: 30px;
+                        }
+                        
                     }
             }
         }
@@ -218,9 +246,52 @@
             bottom: 90px;
             height: 30px;
             width: 40px;
+            
+            @media screen and (max-width: 1280px) {
+                display: none;
+            }
+
+            @media screen and (max-width: 1024px) {
+                display: none;
+            }
         }
         .xs-block({
             display: none;
         });
+
+        &-mid {
+            display: none;
+            @media screen and (max-width: 1440px) {
+                //display: block;
+                position: absolute;
+                bottom: 10%;
+            }
+            @media screen and (max-width: 1280px) {
+                display: block;
+                position: absolute;
+                bottom: 10%;
+            }
+
+            @media screen and (max-width: 1024px) {
+                display: block;
+                position: absolute;
+                bottom: 10%;
+                left: 100px;
+            }
+        }
+
+        &-small {
+            display: none;
+            @media screen and (max-width: 1440px) {
+                display: none;
+                position: absolute;
+                bottom: 10%;
+            }
+            @media screen and (max-width: 1280px) {
+                display: none;
+                position: absolute;
+                bottom: 10%;
+            }
+        }
     }
 }

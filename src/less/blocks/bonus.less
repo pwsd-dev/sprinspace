@@ -21,6 +21,10 @@
 
         .page__text_middle-black {
             margin-bottom: 6%;
+            @media screen and (max-width: 1024px) {
+                font-size: 38px;
+                line-height: 50px;
+            }
             .xs-block({
                 padding-top: 5%;
                 padding-bottom: 25%;
@@ -34,6 +38,9 @@
 
         &__slider {
             position: relative;
+            @media screen and (max-width: 1441px) {
+                .shift-left(-.4);  
+            }
             .tns-outer {
                 width: 1320px;
             }
@@ -42,6 +49,9 @@
             }
             .page__img {
                 .shift-left(.01);
+                @media screen and (max-width: 1441px) {
+                    
+                }
             }
             //.shift-left(1.9);
             
@@ -55,6 +65,10 @@
         position: relative;
         top: -400px;
         left: 1100px;
+        @media screen and (max-width: 1441px) {
+            top: -430px;
+            left: 1060px;
+        }
     }
 
     .bonus-btn_prev {
@@ -64,6 +78,10 @@
         position: relative;
         top: -400px;
         left: 1085px;
+        @media screen and (max-width: 1441px) {
+            top: -425px;
+            left: 1060px;
+        }
     }
 
     .page__img {
